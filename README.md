@@ -42,7 +42,7 @@ git config --global merge.tool vimdiff
 
 ### Show remote urls
 ```
-git remove -v
+git remote -v
 ```
 
 ### Link local to remote repository
