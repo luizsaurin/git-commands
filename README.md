@@ -253,3 +253,13 @@ git push origin -d branch-01
 ### Merge some branch to your current branch
 ```
 git merge branch-01
+```
+
+&nbsp;
+
+## Blame
+
+### Show the last modification of a file within the given line range
+```
+git blame -L 1,10 (file-path)
+```
