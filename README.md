@@ -75,6 +75,11 @@ git remote rename origin new-name
 git remote rm origin
 ```
 
+### Update active origin
+```
+git remote set-url origin (new url here)
+```
+
 &nbsp;
 
 ## Status
