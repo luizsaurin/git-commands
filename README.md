@@ -282,3 +282,17 @@ git checkout <commit-id>
 ```
 git switch -
 ```
+
+&nbsp;
+
+## Rebase
+
+### Rebase the last 3 commits (current + last 2)
+```
+git rebase -i HEAD~3
+```
+
+### Cancel rebase process
+```
+git rebase --abort
+```
