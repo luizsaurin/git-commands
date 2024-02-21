@@ -268,3 +268,17 @@ git merge branch-01
 ```
 git blame -L 1,10 (file-path)
 ```
+
+&nbsp;
+
+## HEAD
+
+### Move HEAD to a specific commit id (detached HEAD state)
+```
+git checkout <commit-id>
+```
+
+### Go back to the last branch commit
+```
+git switch -
+```
