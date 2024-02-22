@@ -287,7 +287,7 @@ git switch -
 
 ## Rebase
 
-### Rebase the last 3 commits (current + last 2)
+### Rebase the last 3 commits (HEAD commit + previous 2)
 ```
 git rebase -i HEAD~3
 ```
