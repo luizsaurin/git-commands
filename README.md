@@ -18,6 +18,11 @@ git init
 git config --list
 ```
 
+### List local user name end email values
+```
+git config user.name && git config user.email
+```
+
 ### Set global name and email (all repos)
 ```
 git config --global user.name "John Doe"
