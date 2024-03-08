@@ -134,6 +134,12 @@ git commit -m "title message
 > here is the last line"
 ```
 
+### Change last commit message
+```
+git commit --amend -m "New commit message"
+git push --force
+```
+
 &nbsp;
 
 ## Push
