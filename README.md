@@ -216,6 +216,10 @@ q
 git branch -M main
 ```
 
+### Discart all local changes
+```
+git checkout .
+```
 
 ### Show local branches
 ```
