@@ -1,249 +1,42 @@
-# Git commands
+# Useful git commands
 
-List of Git commands to make life easier
-
-&nbsp;
-
-## Init local repository
-```
-git init
-```
+List of useful git commands I frequently need to use and forget
 
 &nbsp;
 
 ## Config
-
 ### List git configs
 ```
-git config --list
+git config --local --list
+cat .\.git\config
 ```
-
-### List local user name end email values
 ```
-git config user.name && git config user.email
+git config --global --list
 ```
-
-### Set global name and email (all repos)
+### Set user name and email
 ```
+git config --local user.name "John Doe"
 git config --global user.name "John Doe"
-git config --global user.email john.doe@mail.com
 ```
-
-## Set local name and email (just one repo)
 ```
-git config user.name "John Doe"
-git config user.email john.doe@mail.com
-```
-
-### Set default editor and merge tool
-```
-git config --global core.editor vim
-git config --global merge.tool vimdiff
-```
-
-&nbsp;
-
-## Remote
-
-### Show remote urls
-```
-git remote -v
-```
-
-### Link local to remote repository
-```
-git remote add origin https://github.com/USERNAME/REPOSITORY-NAME.git
-```
-
-### Link local to remote repository with token for authentication
-```
-git remote add origin https://TOKEN@github.com/USERNAME/REPOSITORY-NAME.git
-```
-
-### Link local to remote repository with username and password for authentication
-```
-git remote add origin https://USERNAME:PASSWQRDgithub.com/USERNAME/REPOSITORY-NAME.git
-```
-
-### Show remote repository infos
-```
-git remote show origin
-```
-
-### Rename remote repository
-```
-git remote rename origin new-name
-```
-
-### Unlink remote repository
-```
-git remote rm origin
-```
-
-### Update active origin
-```
-git remote set-url origin (new url here)
-```
-
-&nbsp;
-
-## Status
-```
-git status
-```
-
-&nbsp;
-
-## Staging
-
-### Stage file
-```
-git add someFile.txt
-```
-
-### Stage directory
-```
-git add someDirectory
-```
-
-### Stage all files
-```
-git add .
-```
-
-### Unstage all files
-```
-git reset
-```
-
-&nbsp;
-
-## Commit
-
-### Commit with one line message
-```
-git commit -m "my message"
-```
-
-### Commit with multiline message
-```
-git commit -m "title message
->
-> this is the message body.
-> press Enter do add more lines.
-> here is the last line"
-```
-
-### Change last commit message
-```
-git commit --amend -m "New commit message"
-git push --force
-```
-
-&nbsp;
-
-## Push
-
-### First push to main branch of a new empty remote repository
-```
-git push -u origin main
-```
-
-### Normal push
-```
-git push
-```
-
-&nbsp;
-
-## Pull
-```
-git pull
-```
-
-&nbsp;
-
-## Fetch
-
-### Normal fetch
-```
-git fetch
-```
-
-### Fetch and prune (remove deleted remote branches)
-```
-git fetch -p
-```
-
-&nbsp;
-
-## Clone
-```
-git clone https://github.com/USERNAME/REPOSITORY-NAME.git
+git config --local user.email "john.doe@mail.com"
+git config --global user.email "john.doe@mail.com"
 ```
 
 &nbsp;
 
 ## Log
-
-### Log last commit
+### Log commits in one line
 ```
-git log -1
-```
-### Log last commit with more details
-```
-git log -1 --stat
-```
-### Log each commit in one line
-```
-git log --pretty=oneline
-```
-### Log file history
-```
-git log -- fileDirectory
-```
-### Exit log list
-```
-q
+git log -5 --oneline
 ```
 
 &nbsp;
 
 ## Branch
-
 ### Change default branch name
 ```
 git branch -M main
-```
-
-### Discart all local changes
-```
-git checkout .
-```
-
-### Show local branches
-```
-git branch
-```
-### Show remote branches
-```
-git branch -r
-```
-### Show local and remote branches
-```
-git branch -a
-```
-### Create new branch
-```
-git branch branch-01
-```
-### Change branch
-```
-git checkout branch-01
-```
-### Create and use new branch
-```
-git checkout -b branch-01
 ```
 ### Create remote branch
 ```
@@ -256,32 +49,6 @@ git checkout -b branch-01 origin/branch-01
 ### Link current local branch to remote branch
 ```
 git push --set-upstream origin branch01
-```
-### Delete local branch
-```
-git branch -d branch-01
-```
-### Delete remote branch
-```
-git push origin -d branch-01
-```
-
-&nbsp;
-
-## Merge
-
-### Merge some branch to your current branch
-```
-git merge branch-01
-```
-
-&nbsp;
-
-## Blame
-
-### Show the last modification of a file within the given line range
-```
-git blame -L 1,10 (file-path)
 ```
 
 &nbsp;
