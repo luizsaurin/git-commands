@@ -22,6 +22,11 @@ git config --global user.name "John Doe"
 git config --local user.email "john.doe@mail.com"
 git config --global user.email "john.doe@mail.com"
 ```
+### Set default editor
+```
+git config --global core.editor vim
+git config --global core.editor "C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+```
 
 &nbsp;
 
@@ -38,17 +43,9 @@ git log -5 --oneline
 ```
 git branch -M main
 ```
-### Create remote branch
+### Push local branch that does not exists on remote yet
 ```
-git push origin branch-01
-```
-### Create new local branch linked to an existing remote branch
-```
-git checkout -b branch-01 origin/branch-01
-```
-### Link current local branch to remote branch
-```
-git push --set-upstream origin branch01
+git push -u origin branch-name
 ```
 
 &nbsp;
