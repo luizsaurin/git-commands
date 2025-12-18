@@ -25,7 +25,7 @@ git config --global user.email "john.doe@mail.com"
 ### Set default editor
 ```
 git config --global core.editor vim
-git config --global core.editor "C:\Users\user\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+git config --global core.editor "code --wait"
 ```
 
 &nbsp;
