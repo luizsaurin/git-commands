@@ -75,3 +75,22 @@ git rebase -i HEAD~3
 ```
 git rebase --abort
 ```
+
+&nbsp;
+
+## Undo actions
+
+### Unstage all changes
+```
+git reset .
+```
+
+### Revert all unstaged changes
+```
+git restore .
+```
+
+### Hard reset a branch to a specific commit
+```
+git reset --hard <commit-hash>
+```
