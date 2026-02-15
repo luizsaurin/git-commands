@@ -94,3 +94,12 @@ git restore .
 ```
 git reset --hard <commit-hash>
 ```
+&nbsp;
+
+## Commit
+
+### Change last commit message
+```
+git commit --amend -m "New commit message"
+git push --force
+```
