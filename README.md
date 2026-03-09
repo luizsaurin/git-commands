@@ -76,6 +76,11 @@ git rebase -i HEAD~3
 git rebase --abort
 ```
 
+### Update last commit date time after rebase
+```
+git commit --amend --no-edit --date=now
+```
+
 &nbsp;
 
 ## Undo actions
