@@ -87,7 +87,7 @@ git commit --amend --no-edit --date=now
 
 ### Unstage all changes
 ```
-git reset .
+git reset
 ```
 
 ### Revert all unstaged changes
